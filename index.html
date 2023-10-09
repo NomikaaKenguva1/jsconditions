@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Check Even or Odd
+        var number = prompt("Enter a number");
+        if (number % 2 === 0) {
+            alert("Number is even");
+        } else {
+            alert("Number is odd");
+        }
+
+        //  Leap Year Check
+        var year = prompt("Enter year");
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            alert("It's a leap year");
+        } else {
+            alert("Not a leap year");
+        }
+
+        // Find the Largest Number
+        var input1 = parseInt(prompt("Enter number 1"));
+        var input2 = parseInt(prompt("Enter number 2"));
+        var input3 = parseInt(prompt("Enter number 3"));
+        if (input1 === input2 && input2 === input3) {
+            alert("All are equal");
+        } else {
+            var largest = input1;
+            if (input2 > largest) {
+                largest = input2;
+            }
+            if (input3 > largest) {
+                largest = input3;
+            }
+            if (largest < 0) {
+                alert("Negative input");
+            } else {
+                alert("Largest number is: " + largest);
+            }
+        }
+
+        // Time of the Day
+        var hour = prompt("Enter hour");
+        if (hour >= 6 && hour < 12) {
+            alert("Good Morning");
+        } else if (hour >= 12 && hour < 18) {
+            alert("Good Afternoon");
+        } else if (hour >= 18 && hour <= 23) {
+            alert("Good Evening");
+        } else {
+            alert("Good Night");
+        }
+
+        //Currency Converter
+        
+        var euro=+prompt("enter amount in dollars");
+        alert("amount in euros is: "+ (euro*0.95));
+
+
+
+
+        //Traffic Light
+        
+        
+        const trafficLightColor = prompt("Enter the traffic light color (red, yellow, or green):");
+        switch (trafficLightColor) {
+            case 'red':
+                alert('Stop');
+                break;
+            case 'yellow':
+                alert('Slow down');
+                break;
+            case 'green':
+                alert('Go');
+                break;
+            default:
+                alert('Invalid traffic light color');
+                break;
+            }
+
+            //seasons
+
+            var month=prompt("enter a month january,febuary,march,april,may,june,july,august,september,october,november,december");
+            switch(month){
+                case 'january':
+                    alert('winter');
+                    break;
+                case 'febuary':
+                    alert('winter');
+                    break;
+                case 'march':
+                    alert('spring');
+                    break;
+                case 'april':
+                    alert('spring');
+                case 'may':
+                    alert('spring');
+                    break;
+                case 'june':
+                    alert('summer');
+                    break;
+                case 'july':
+                    alert('summer');
+                    break;
+                case 'august':
+                    alert('summer');
+                    break;
+                case 'september':
+                    alert('autumn');
+                    break;
+                case 'october':
+                    alert('autumn');
+                    break;
+                case 'november':
+                    alert('autumn');
+                    break;
+                case 'december':
+                    alert('autumn');
+                    break;
+                default:
+                    alert("enter valid input");
+                    break;
+
+
+
+            }
+
+            //menu selection
+             var menu=+prompt("select option from menu 1,2,3,4");
+             switch(menu){
+                case 1:
+                    alert("option 1 selected");
+                    break;
+                case 2:
+                    alert("option 2 selected");
+                    break;
+                case 3:
+                    alert("option 3 selected");
+                    break;
+                case 4:
+                    alert("option 4 selected");
+                    break;
+                default:
+                    alert("enter valid menu option");
+                    break;
+                
+                
+             }
+            
+
+
+    </script>
+</body>
+</html>
